@@ -76,7 +76,7 @@ module.exports = {
           from: paths.appPublic,
           to: '.',
           globOptions: {
-            ignore: [paths.appHtml],
+            ignore: ['*/**/index.html'],
           },
         },
       ],
