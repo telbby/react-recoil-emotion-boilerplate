@@ -59,6 +59,10 @@ module.exports = {
           name: 'static/media/[name].[contenthash:8].svg',
         },
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
