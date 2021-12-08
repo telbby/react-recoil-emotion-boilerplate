@@ -12,7 +12,7 @@ React&TypeScript boilerplate using Recoil, Emotion. It was built using webpack a
 - [Recoil](https://recoiljs.org/)
 - [Emotion](https://emotion.sh/docs/introduction)
 - [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
-- [Webpack](https://webpack.js.org/) & [Babel](https://babeljs.io/)
+- [Webpack](https://webpack.js.org/) & [SWC](https://swc.rs/)
 - [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
 - [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Husky](https://typicode.github.io/husky/#/) & [Lint-Staged](https://github.com/okonet/lint-staged)
@@ -22,7 +22,7 @@ React&TypeScript boilerplate using Recoil, Emotion. It was built using webpack a
 ### Installation
 
 ```bash
-$ npx degit https://github.com/telbby/react-recoil-emotion-boilerplate <project name>
+$ npx degit https://github.com/telbby/react-recoil-emotion-boilerplate#swc <project name>
 $ cd <project name>
 $ yarn install
 ```
