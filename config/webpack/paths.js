@@ -42,10 +42,11 @@ const resolveModule = (resolveFn, filePath) => {
 
 module.exports = {
   appPath: resolveApp('.'),
+  appSource: resolveApp('src'),
   appIndex: resolveModule(resolveApp, './src/index'),
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
-  babelConfig: resolveApp('config/babel.config.json'),
+  swcConfig: resolveApp('config/.swcrc'),
   publicUrlOrPath,
 };

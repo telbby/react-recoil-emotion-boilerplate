@@ -28,16 +28,9 @@ module.exports = {
         test: /\.(js|jsx|ts|tsx)$/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: 'swc-loader',
             options: {
-              babelrc: true,
-              configFile: paths.babelConfig,
-            },
-          },
-          {
-            loader: 'ts-loader',
-            options: {
-              transpileOnly: true,
+              configFile: paths.swcConfig,
             },
           },
         ],
@@ -89,5 +82,8 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+    alias: {
+      '@': paths.appSource,
+    },
   },
 };
